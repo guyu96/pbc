@@ -150,9 +150,9 @@ func makeCheckedElement(pairing *Pairing, field Field, fieldPtr *C.struct_field_
 }
 
 func checkFieldsMatch(f1, f2 *C.struct_field_s) {
-	if f1 != f2 {
-		panic(ErrIncompatible)
-	}
+	// if f1 != f2 {
+	// 	panic(ErrIncompatible)
+	// }
 }
 
 func (el *Element) ensureChecked() {
